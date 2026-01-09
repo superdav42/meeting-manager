@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "telex/block-meeting-manager",
+	"version": "1.0.0",
+	"title": "Meeting Manager",
+	"category": "widgets",
+	"icon": "video-alt2",
+	"description": "Manage single or recurring virtual meetings with Jitsi integration, email notifications, and push notifications.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"multiple": true
+	},
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"isRecurring": {
+			"type": "boolean",
+			"default": false
+		},
+		"meetingDate": {
+			"type": "string",
+			"default": ""
+		},
+		"scheduleType": {
+			"type": "string",
+			"default": "weekly"
+		},
+		"recurrenceDay": {
+			"type": "string",
+			"default": "monday"
+		},
+		"recurrenceWeek": {
+			"type": "string",
+			"default": "1"
+		},
+		"startTime": {
+			"type": "string",
+			"default": "10:00"
+		},
+		"endTime": {
+			"type": "string",
+			"default": "11:00"
+		},
+		"timezone": {
+			"type": "string",
+			"default": "America/New_York"
+		},
+		"jitsiProvider": {
+			"type": "string",
+			"default": "meet"
+		},
+		"jitsiDomain": {
+			"type": "string",
+			"default": "meet.jit.si"
+		},
+		"jitsiRoom": {
+			"type": "string",
+			"default": ""
+		},
+		"jaasAppId": {
+			"type": "string",
+			"default": ""
+		},
+		"jaasApiKey": {
+			"type": "string",
+			"default": ""
+		},
+		"jaasKeyId": {
+			"type": "string",
+			"default": ""
+		},
+		"notificationTime": {
+			"type": "number",
+			"default": 30
+		}
+	},
+	"textdomain": "meeting-manager-block-wp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

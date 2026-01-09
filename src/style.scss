@@ -1,0 +1,277 @@
+.wp-block-telex-block-meeting-manager {
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.meeting-manager-container {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	text-align: center;
+}
+
+.meeting-manager-countdown {
+	margin-bottom: 2rem;
+}
+
+.countdown-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: #1e1e1e;
+}
+
+.countdown-timer {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.countdown-unit {
+	background: #f0f0f1;
+	border-radius: 8px;
+	padding: 1rem;
+	min-width: 80px;
+}
+
+.countdown-value {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #2271b1;
+	display: block;
+}
+
+.countdown-label {
+	font-size: 0.875rem;
+	color: #757575;
+	display: block;
+	margin-top: 0.5rem;
+	text-transform: uppercase;
+}
+
+.meeting-start-time {
+	margin: 1.5rem 0 0.5rem 0;
+	padding: 1rem;
+	background: #f0f6fc;
+	border-radius: 8px;
+	border-left: 4px solid #2271b1;
+}
+
+.meeting-datetime {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #1e1e1e;
+	margin: 0;
+}
+
+.meeting-timezone {
+	font-size: 0.875rem;
+	color: #757575;
+	margin-top: 0.5rem;
+}
+
+.meeting-manager-subscription {
+	max-width: 400px;
+	margin: 2rem auto;
+}
+
+.subscription-title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: #1e1e1e;
+}
+
+.subscription-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form-group {
+	text-align: left;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #1e1e1e;
+}
+
+.form-group input[type="email"] {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	font-size: 1rem;
+}
+
+.form-group input[type="email"]:focus {
+	outline: none;
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	text-align: left;
+}
+
+.checkbox-group input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+}
+
+.checkbox-group label {
+	margin: 0;
+	font-size: 0.875rem;
+	color: #1e1e1e;
+}
+
+.subscribe-button {
+	background: #2271b1;
+	color: #fff;
+	border: none;
+	padding: 0.875rem 1.5rem;
+	border-radius: 6px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.subscribe-button:hover {
+	background: #135e96;
+}
+
+.subscribe-button:disabled {
+	background: #dcdcde;
+	cursor: not-allowed;
+}
+
+.subscription-message {
+	padding: 0.75rem;
+	border-radius: 6px;
+	font-size: 0.875rem;
+	margin-top: 1rem;
+}
+
+.subscription-message.success {
+	background: #d7f2e9;
+	color: #00693e;
+	border: 1px solid #00693e;
+}
+
+.subscription-message.error {
+	background: #fcebeb;
+	color: #cc1818;
+	border: 1px solid #cc1818;
+}
+
+.meeting-manager-jitsi {
+	// Break out of parent container to span almost full viewport width.
+	width: 100vw;
+	max-width: 1400px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 2rem;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+.jitsi-container {
+	position: relative;
+	width: 100%;
+	// Taller aspect ratio for better video conferencing experience.
+	padding-bottom: 56.25%;
+	background: #000;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+// For very wide screens, increase the height.
+@media (min-width: 1200px) {
+	.jitsi-container {
+		padding-bottom: 50%;
+	}
+}
+
+.jitsi-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.meeting-info {
+	margin: 2rem 0;
+	padding: 1rem;
+	background: #f0f0f1;
+	border-radius: 8px;
+}
+
+.meeting-info-title {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: #1e1e1e;
+}
+
+.meeting-info-text {
+	font-size: 0.875rem;
+	color: #757575;
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.meeting-manager-container {
+		padding: 1.5rem;
+	}
+
+	.countdown-timer {
+		gap: 0.5rem;
+	}
+
+	.countdown-unit {
+		min-width: 60px;
+		padding: 0.75rem;
+	}
+
+	.countdown-value {
+		font-size: 1.5rem;
+	}
+
+	.countdown-label {
+		font-size: 0.75rem;
+	}
+
+	.meeting-datetime {
+		font-size: 0.9rem;
+	}
+
+	.meeting-manager-jitsi {
+		padding: 0;
+		width: 100vw;
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+		left: 0;
+		transform: none;
+	}
+
+	.jitsi-container {
+		border-radius: 0;
+		// Taller on mobile for better viewing.
+		padding-bottom: 75%;
+	}
+}

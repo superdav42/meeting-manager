@@ -1,0 +1,35 @@
+{
+    "name": "superdav42/meeting-manager",
+    "description": "A comprehensive WordPress block for managing single or recurring virtual meetings with Jitsi integration, email notifications, and push notifications.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "WordPress Telex",
+            "homepage": "https://github.com/superdav42"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "meeting",
+        "jitsi",
+        "video-conferencing",
+        "jaas",
+        "8x8"
+    ],
+    "homepage": "https://github.com/superdav42/meeting-manager",
+    "support": {
+        "issues": "https://github.com/superdav42/meeting-manager/issues",
+        "source": "https://github.com/superdav42/meeting-manager"
+    },
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

@@ -1,0 +1,41 @@
+
+.wp-block-telex-block-meeting-manager {
+	.meeting-manager-editor {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: #fff;
+		padding: 2rem;
+		border-radius: 12px;
+		text-align: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.meeting-manager-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	h3 {
+		margin: 0 0 1rem 0;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.meeting-details {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 8px;
+		padding: 1.5rem;
+		text-align: left;
+		backdrop-filter: blur(10px);
+		
+		p {
+			margin: 0.5rem 0;
+			font-size: 0.9rem;
+			
+			strong {
+				display: inline-block;
+				min-width: 100px;
+			}
+		}
+	}
+}
+	

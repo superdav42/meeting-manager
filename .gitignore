@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (optional - uncomment if you want to exclude build from repo)
+# build/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug and log files
+*.log
+debug.log
+
+# Local config
+.env
+.env.local
+
+# Composer
+vendor/
+
+# npm/yarn
+npm-debug.log
+yarn-error.log
+
+# Artifacts
+artefact.xml
+*.zip
+*.tar.gz
