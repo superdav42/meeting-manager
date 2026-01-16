@@ -269,6 +269,14 @@ function meeting_manager_handle_subscription( $request ) {
 		update_option( 'meeting_manager_subscribers_' . $block_id, $subscribers );
 	}
 
+	// Add to newsletter as confirmed subscriber if join_list is set
+	if ( $join_list && class_exists( 'TNP' ) ) {
+		TNP::add_subscriber( array(
+			'email'  => $email,
+			'status' => 'C', // Confirmed
+		) );
+	}
+
 	return array(
 		'success' => true,
 		'message' => 'Successfully subscribed to meeting notifications',
