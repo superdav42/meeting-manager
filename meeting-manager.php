@@ -4,7 +4,6 @@
  * Description:       A comprehensive block for managing single or recurring virtual meetings with Jitsi integration, email notifications, and push notifications.
  * Version:           1.0.0
  * Requires at least: 6.1
- * Tested up to:     7.1
  * Requires PHP:      7.4
  * Author:            WordPress Telex
  * License:           GPLv2 or later
