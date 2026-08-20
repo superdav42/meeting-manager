@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Meeting Manager
  * Description:       A comprehensive block for managing single or recurring virtual meetings with Jitsi integration, email notifications, and push notifications.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.1
  * Requires PHP:      7.4
  * Author:            WordPress Telex
@@ -12,6 +12,10 @@
  *
  * @package MeetingManager
  */
+
+if ( ! defined( 'MEETING_MANAGER_VERSION' ) ) {
+	define( 'MEETING_MANAGER_VERSION', '1.0.1' );
+}
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

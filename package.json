@@ -1,6 +1,6 @@
 {
     "name": "block-meeting-manager",
-    "version": "0.1.0",
+    "version": "1.0.1",
     "description": "Manage single or recurring virtual meetings with Jitsi integration, email notifications, and push notifications.",
     "author": "telex block authoring tool",
     "license": "GPL-2.0-or-later",
